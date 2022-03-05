@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registeration Form</title>
+</head>
+
+<body>
+
+   <div>
+   <table align="center">
+       <caption>Patient Registeration</caption>
+       <tr>
+           <td>Full Name</td>
+           <td><input type="text" name="name" id="name" required></td>
+       </tr>
+       <tr>
+        <td>Address</td>
+        <td><input type="text" name="address" id="address" required></td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" id="age" min="1" max="111" required>
+        
+            <select name="age" id="age">
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+    
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Date of birth</td>
+        <td><input type="date" name="date of birth" id="birth" required></td>
+       
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td><input type="tel" name="phone" id="phone"></td>
+    </tr>
+    <tr>
+        <td>Emergency contact</td>
+        <td><input type="text" name="emergency contact" id="emergency contact"></td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td><input type="tel" name="phone" id="phone"></td>
+    </tr>
+    <tr>
+        <td>Current Medication</td>
+        <td><input type="text" name="medication" id="medication"></td>
+    </tr>
+    <tr>
+        <td>Allergies</td>
+        <td>
+            <input type="radio" name="Allergies" id="yes allergy">
+             <label for="yes">Yes</label>
+             <input type="radio" id="no" name="Allergies" value="no allergy">
+             <label for="no">No</label></td>
+    </tr>
+    <tr>
+        <td>Details</td>
+        <td><textarea name="Details" id="Details" rows="4" ></textarea></td>
+    </tr>
+    <tr>
+        <td>Payment</td>
+        <td> 
+            <select name="payment" id="payment">
+            <option value="card">Card</option>
+            <option value="cash">Cash</option>
+            <option value="online">Online</option>
+    
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Purpose of visit</td>
+        <td><input type="text" name="purpose of visit" id="purpose of visit"></td>
+    </tr>
+    <tr><td colspan="2">
+    <button type="submit">Register</button><button type="reset">Cancel</button>
+</td>
+    </tr>
+    </div>
+   </table>
+</body>
+</html>
